@@ -1,0 +1,263 @@
+{
+    "WEAPON_GLOCK": {
+        "label": "Glock 17",
+        "attachments": {
+            "Slides": [
+                {"label": "Slide 1", "value": "COMPONENT_SLIDE_01"},
+                {"label": "Slide 2", "value": "COMPONENT_SLIDE_02"},
+                {"label": "Slide 3", "value": "COMPONENT_SLIDE_03"},
+                {"label": "Slide 4", "value": "COMPONENT_SLIDE_04"},
+                {"label": "Slide 5", "value": "COMPONENT_SLIDE_05"},
+                {"label": "Slide 6", "value": "COMPONENT_SLIDE_06"},
+                {"label": "Slide 7", "value": "COMPONENT_SLIDE_07"},
+                {"label": "Slide 8", "value": "COMPONENT_SLIDE_08"},
+                {"label": "Slide 9", "value": "COMPONENT_SLIDE_09"}
+            ],
+            "Suppressors": [
+                {"label": "Suppressor 1", "value": "COMPONENT_SUPP_01"},
+                {"label": "Suppressor 2", "value": "COMPONENT_SUPP_02"},
+                {"label": "Suppressor 3", "value": "COMPONENT_SUPP_03"},
+                {"label": "Suppressor 4", "value": "COMPONENT_SUPP_04"},
+                {"label": "Suppressor 5", "value": "COMPONENT_SUPP_05"},
+                {"label": "Suppressor 6", "value": "COMPONENT_SUPP_06"},
+                {"label": "Suppressor 7", "value": "COMPONENT_SUPP_07"}
+            ],
+            "Magazines": [
+                {"label": "Default Magazine  (17 Rounds)", "value": "COMPONENT_CLIP_01"},
+                {"label": "Extended magazine (22 Rounds)", "value": "COMPONENT_CLIP_02"},
+                {"label": "Extended magazine (30 Rounds)", "value": "COMPONENT_CLIP_03"},
+                {"label": "Drum magazine (50 Rounds)", "value": "COMPONENT_CLIP_04"}
+            ],
+            "Flashlights": [
+                {"label": "Flashlight 1", "value": "COMPONENT_GLOCK_FLSH_01"},
+                {"label": "Flashlight 2", "value": "COMPONENT_GLOCK_FLSH_02"},
+                {"label": "Flashlight 3", "value": "COMPONENT_GLOCK_FLSH_03"},
+                {"label": "Flashlight 4", "value": "COMPONENT_GLOCK_FLSH_04"}
+            ]
+        }
+    },
+    "WEAPON_GLOCK19X": {
+        "label": "Glock 19x Tan",
+        "attachments": {
+            "Suppressors": [
+                {"label": "Suppressor", "value": "COMPONENT_SUPP"}
+            ],
+            "Magazines": [
+                {"label": "Default Magazine  (17 Rounds)", "value": "COMPONENT_CLIP_01"},
+                {"label": "Extended magazine (22 Rounds)", "value": "COMPONENT_CLIP_02"}
+            ],
+            "Flashlights": [
+                {"label": "Flashlight", "value": "COMPONENT_GLOCK19X_FLSH_01"}
+            ]
+        }
+    },
+    "WEAPON_GLOCK19X2": {
+        "label": "Glock 19x Black",
+        "attachments": {
+            "Suppressors": [
+                {"label": "Suppressor", "value": "COMPONENT_SUPP"}
+            ],
+            "Magazines": [
+                {"label": "Default Magazine  (17 Rounds)", "value": "COMPONENT_CLIP_03"},
+                {"label": "Extended magazine (22 Rounds)", "value": "COMPONENT_CLIP_04"}
+            ],
+            "Flashlights": [
+                {"label": "Flashlight", "value": "COMPONENT_GLOCK19X_FLSH_02"}
+            ]
+        }
+    },
+    "WEAPON_SR25": {
+        "label": "SR-25",
+        "attachments": {
+            "Scopes": [
+                {"label": "Scope 1", "value": "COMPONENT_SR25_SCOPE_01"},
+                {"label": "Scope 2", "value": "COMPONENT_SR25_SCOPE_02"},
+                {"label": "Scope 3", "value": "COMPONENT_SR25_SCOPE_03"},
+                {"label": "Scope 4", "value": "COMPONENT_SR25_SCOPE_04"},
+                {"label": "Scope 5", "value": "COMPONENT_SR25_SCOPE_05"},
+                {"label": "Scope 6", "value": "COMPONENT_SR25_SCOPE_06"},
+                {"label": "Scope 7", "value": "COMPONENT_SR25_SCOPE_07"},
+                {"label": "Scope 8", "value": "COMPONENT_SR25_SCOPE_08"},
+                {"label": "Scope 9", "value": "COMPONENT_SR25_SCOPE_09"},
+                {"label": "Scope 10", "value": "COMPONENT_SR25_SCOPE_10"},
+                {"label": "Scope 11", "value": "COMPONENT_SR25_SCOPE_11"},
+                {"label": "Scope 12", "value": "COMPONENT_SR25_SCOPE_12"}
+            ],
+            "Suppressors": [
+                {"label": "Suppressor 1", "value": "COMPONENT_SR25_SUPP_01"},
+                {"label": "Suppressor 2", "value": "COMPONENT_SR25_SUPP_02"},
+                {"label": "Suppressor 3", "value": "COMPONENT_SR25_SUPP_03"}
+            ],
+            "Magazines": [
+                {"label": "Magazine 1", "value": "COMPONENT_SR25_CLIP_01"},
+                {"label": "Magazine 2", "value": "COMPONENT_SR25_CLIP_02"},
+                {"label": "Magazine 3", "value": "COMPONENT_SR25_CLIP_03"}
+
+            ],
+            "Flashlights": [
+                {"label": "Flashlight 1", "value": "COMPONENT_SR25_FLSH_01"},
+                {"label": "Flashlight 2", "value": "COMPONENT_SR25_FLSH_02"},
+                {"label": "Flashlight 3", "value": "COMPONENT_SR25_FLSH_03"},
+                {"label": "Flashlight 4", "value": "COMPONENT_SR25_FLSH_04"}
+            ]
+        }
+    },
+    "WEAPON_MDR": {
+        "label": "DT MDR 5.56x45",
+        "attachments": {
+            "Scopes": [
+                {"label": "Scope 1", "value": "COMPONENT_MDR_SCOPE_01"},
+                {"label": "Scope 2", "value": "COMPONENT_MDR_SCOPE_02"},
+                {"label": "Scope 3", "value": "COMPONENT_MDR_SCOPE_03"},
+                {"label": "Scope 4", "value": "COMPONENT_MDR_SCOPE_04"}
+            ],
+            "Suppressors": [
+                {"label": "Suppressor 1", "value": "COMPONENT_MDR_SUPP_01"},
+                {"label": "Suppressor 2", "value": "COMPONENT_MDR_SUPP_02"},
+                {"label": "Suppressor 3", "value": "COMPONENT_MDR_SUPP_03"},
+                {"label": "Suppressor 4", "value": "COMPONENT_MDR_SUPP_04"},
+                {"label": "Suppressor 5", "value": "COMPONENT_MDR_SUPP_05"}
+            ],
+            "Magazines": [
+                {"label": "Magazine 1", "value": "COMONENT_MDR_CLIP_01"},
+                {"label": "Magazine 2", "value": "COMONENT_MDR_CLIP_02"},
+                {"label": "Magazine 3", "value": "COMONENT_MDR_CLIP_03"},
+                {"label": "Magazine 4", "value": "COMONENT_MDR_CLIP_04"},
+                {"label": "Magazine 5", "value": "COMONENT_MDR_CLIP_05"},
+                {"label": "Magazine 6", "value": "COMONENT_MDR_CLIP_06"},
+                {"label": "Magazine 7", "value": "COMONENT_MDR_CLIP_07"},
+                {"label": "Magazine 8", "value": "COMONENT_MDR_CLIP_08"},
+                {"label": "Magazine 9", "value": "COMONENT_MDR_CLIP_09"}
+            ]
+        }
+    },
+    "WEAPON_MDR2": {
+        "label": "DT MDR 7.62x51",
+        "attachments": {
+            "Scopes": [
+                {"label": "Scope 1", "value": "COMPONENT_MDR2_SCOPE_01"},
+                {"label": "Scope 2", "value": "COMPONENT_MDR2_SCOPE_02"},
+                {"label": "Scope 3", "value": "COMPONENT_MDR2_SCOPE_03"},
+                {"label": "Scope 4", "value": "COMPONENT_MDR2_SCOPE_04"},
+                {"label": "Scope 5", "value": "COMPONENT_MDR2_SCOPE_05"},
+                {"label": "Scope 6", "value": "COMPONENT_MDR2_SCOPE_06"}
+            ],
+            "Suppressors": [
+                {"label": "Suppressor 1", "value": "COMPONENT_MDR2_SUPP_01"},
+                {"label": "Suppressor 2", "value": "COMPONENT_MDR2_SUPP_02"},
+                {"label": "Suppressor 3", "value": "COMPONENT_MDR2_SUPP_03"}
+            ],
+            "Magazines": [
+                {"label": "Magazine 1", "value": "COMONENT_MDR2_CLIP_01"},
+                {"label": "Magazine 2", "value": "COMONENT_MDR2_CLIP_02"},
+                {"label": "Magazine 3", "value": "COMONENT_MDR2_CLIP_03"},
+                {"label": "Magazine 4", "value": "COMONENT_MDR2_CLIP_04"},
+                {"label": "Magazine 5", "value": "COMONENT_MDR2_CLIP_05"},
+                {"label": "Magazine 6", "value": "COMONENT_MDR2_CLIP_06"},
+                {"label": "Magazine 7", "value": "COMONENT_MDR2_CLIP_07"}
+            ],
+            "Flashlights & Lasers": [
+                {"label": "Flashlight 1", "value": "COMPONENT_MDR2_FLSH_01"},
+                {"label": "Flashlight 2", "value": "COMPONENT_MDR2_FLSH_02"},
+                {"label": "Flashlight 3", "value": "COMPONENT_MDR2_FLSH_03"},
+                {"label": "Flashlight 4", "value": "COMPONENT_MDR2_FLSH_04"},
+                {"label": "Flashlight 5", "value": "COMPONENT_MDR2_FLSH_05"},
+                {"label": "Flashlight 6", "value": "COMPONENT_MDR2_FLSH_06"}
+            ]
+        }
+    },
+    "WEAPON_AKM": {
+        "label": "AKM",
+        "attachments": {
+            "Stocks": [
+                {"label": "Stock 1", "value": "COMPONENT_AKM_STOCK_01"},
+                {"label": "Stock 2", "value": "COMPONENT_AKM_STOCK_02"},
+                {"label": "Stock 3", "value": "COMPONENT_AKM_STOCK_03"},
+                {"label": "Stock 4", "value": "COMPONENT_AKM_STOCK_04"},
+                {"label": "Stock 5", "value": "COMPONENT_AKM_STOCK_05"},
+                {"label": "Stock 6", "value": "COMPONENT_AKM_STOCK_06"},
+                {"label": "Stock 7", "value": "COMPONENT_AKM_STOCK_07"},
+                {"label": "Stock 8", "value": "COMPONENT_AKM_STOCK_08"},
+                {"label": "Stock 9", "value": "COMPONENT_AKM_STOCK_09"}
+            ],
+            "Magazines": [
+                {"label": "Magazine 1", "value": "COMPONENT_AKM_CLIP_01"},
+                {"label": "Magazine 2", "value": "COMPONENT_AKM_CLIP_02"},
+                {"label": "Magazine 3", "value": "COMPONENT_AKM_CLIP_03"},
+                {"label": "Magazine 4", "value": "COMPONENT_AKM_CLIP_04"},
+                {"label": "Magazine 5", "value": "COMPONENT_AKM_CLIP_05"},
+                {"label": "Magazine 6", "value": "COMPONENT_AKM_CLIP_06"},
+                {"label": "Magazine 7", "value": "COMPONENT_AKM_CLIP_07"},
+                {"label": "Magazine 8", "value": "COMPONENT_AKM_CLIP_08"},
+                {"label": "Magazine 9", "value": "COMPONENT_AKM_CLIP_09"},
+                {"label": "Magazine 10", "value": "COMPONENT_AKM_CLIP_10"},
+                {"label": "Magazine 11", "value": "COMPONENT_AKM_CLIP_11"}
+            ],
+            "Dustcovers": [
+                {"label": "Dustcover 1", "value": "COMPONENT_AKM_DUSTCOVER_01"},
+                {"label": "Dustcover 2", "value": "COMPONENT_AKM_DUSTCOVER_02"},
+                {"label": "Dustcover 3", "value": "COMPONENT_AKM_DUSTCOVER_03"},
+                {"label": "Dustcover 4", "value": "COMPONENT_AKM_DUSTCOVER_04"}
+            ],
+            "Scopes": [
+                {"label": "Scope 1", "value": "COMPONENT_AKM_SCOPE_01"},
+                {"label": "Scope 2", "value": "COMPONENT_AKM_SCOPE_02"},
+                {"label": "Scope 3", "value": "COMPONENT_AKM_SCOPE_03"},
+                {"label": "Scope 4", "value": "COMPONENT_AKM_SCOPE_04"},
+                {"label": "Scope 5", "value": "COMPONENT_AKM_SCOPE_05"},
+                {"label": "Scope 6", "value": "COMPONENT_AKM_SCOPE_06"},
+                {"label": "Scope 7", "value": "COMPONENT_AKM_SCOPE_07"},
+                {"label": "Scope 8", "value": "COMPONENT_AKM_SCOPE_08"},
+                {"label": "Scope 9", "value": "COMPONENT_AKM_SCOPE_09"}
+            ],
+            "Grips": [
+                {"label": "Grip 1", "value": "COMPONENT_AKM_PISTOLGRIP_01"},
+                {"label": "Grip 2", "value": "COMPONENT_AKM_PISTOLGRIP_02"},
+                {"label": "Grip 3", "value": "COMPONENT_AKM_PISTOLGRIP_03"},
+                {"label": "Grip 4", "value": "COMPONENT_AKM_PISTOLGRIP_04"},
+                {"label": "Grip 5", "value": "COMPONENT_AKM_PISTOLGRIP_05"}
+            ],
+            "Hand Guards": [
+                {"label": "Hand Guard 1", "value": "COMPONENT_AKM_HANDGUARD_01"},
+                {"label": "Hand Guard 2", "value": "COMPONENT_AKM_HANDGUARD_02"},
+                {"label": "Hand Guard 3", "value": "COMPONENT_AKM_HANDGUARD_03"},
+                {"label": "Hand Guard 4", "value": "COMPONENT_AKM_HANDGUARD_04"},
+                {"label": "Hand Guard 5", "value": "COMPONENT_AKM_HANDGUARD_05"},
+                {"label": "Hand Guard 6", "value": "COMPONENT_AKM_HANDGUARD_06"},
+                {"label": "Hand Guard 7", "value": "COMPONENT_AKM_HANDGUARD_07"},
+                {"label": "Hand Guard 8", "value": "COMPONENT_AKM_HANDGUARD_08"},
+                {"label": "Hand Guard 9", "value": "COMPONENT_AKM_HANDGUARD_09"},
+                {"label": "Hand Guard 10", "value": "COMPONENT_AKM_HANDGUARD_10"}
+            ],
+            "Suppressors": [
+                {"label": "Suppressor 1", "value": "COMPONENT_AKM_SUPP_01"},
+                {"label": "Suppressor 2", "value": "COMPONENT_AKM_SUPP_02"},
+                {"label": "Suppressor 3", "value": "COMPONENT_AKM_SUPP_03"}
+            ]
+        }
+    },
+    "WEAPON_SIG": {
+        "label": "Sig Sauer M18",
+        "attachments": {
+            "Scopes": [
+                {"label": "Scope 1", "value": "COMPONENT_SIG_SCOPE_01"},
+                {"label": "Scope 2", "value": "COMPONENT_SIG_SCOPE_02"},
+                {"label": "Scope 3", "value": "COMPONENT_SIG_SCOPE_03"}
+            ],
+            "Suppressors": [
+                {"label": "Suppressor 1", "value": "COMPONENT_SIG_SUPP_01"},
+                {"label": "Suppressor 2", "value": "COMPONENT_SIG_SUPP_02"},
+                {"label": "Suppressor 3", "value": "COMPONENT_SIG_SUPP_03"}
+            ],
+            "Magazines": [
+                {"label": "Magazine 1", "value": "COMPONENT_SIG_CLIP_01"},
+                {"label": "Extended Magazine", "value": "COMPONENT_SIG_CLIP_02"}
+            ],
+            "Flashlights": [
+                {"label": "Flashlight 1", "value": "COMPONENT_SIG_FLSH_01"},
+                {"label": "Flashlight 2", "value": "COMPONENT_SIG_FLSH_02"},
+                {"label": "Flashlight 3", "value": "COMPONENT_SIG_FLSH_03"}
+            ]
+        }
+    }
+}
