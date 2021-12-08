@@ -2,7 +2,7 @@
 -- This script is licensed under "GNU General Public License v3.0". https://www.gnu.org/licenses/gpl-3.0.html
 
 _menuPool = NativeUI.CreatePool()
-mainMenu = NativeUI.CreateMenu("Fluffy's Weapons", "~b~© 2021 Team Reaver")
+mainMenu = NativeUI.CreateMenu("Weapons", "~b~© 2021 Team Reaver")
 _menuPool:Add(mainMenu)
 local raw = LoadResourceFile(GetCurrentResourceName(), 'weapons.json')
 local data = json.decode(raw)
@@ -13,30 +13,45 @@ SubMenus[mainMenu] = mainMenu
 -- Functions
 function CreateWeaponMenu(menu)
 
-    for k,v in pairs(data) do
-        if not IsWeaponValid(GetHashKey(k)) then
-            local Unavailable = NativeUI.CreateItem("~m~".. v.label, "Weapon unavailable")
-            Unavailable:SetRightBadge(BadgeStyle.Lock)
-            menu:AddItem(Unavailable)
-
-            table.insert(Items, {Unavailable, k, false})
+    for WeaponName, WeaponData in pairs(data) do
+        if WeaponData.category and not SubMenus[WeaponData.category] then
+            SubMenus[WeaponData.category] = _menuPool:AddSubMenu(menu, WeaponData.category)
+            submenu_cat = SubMenus[WeaponData.category]
+        elseif WeaponData.category and SubMenus[WeaponData.category] then
+            submenu_cat = SubMenus[WeaponData.category]
         else
-            if not SubMenus[k] then
-                SubMenus[k] = _menuPool:AddSubMenu(menu, v.label)
+            submenu_cat = menu
+        end
+
+        if not IsWeaponValid(GetHashKey(WeaponName)) then
+            local Unavailable = NativeUI.CreateItem("~m~".. WeaponData.label, "Weapon unavailable")
+            Unavailable:SetRightBadge(BadgeStyle.Lock)
+            submenu_cat:AddItem(Unavailable)
+
+            table.insert(Items, {Unavailable, WeaponName, false})
+        else
+            if not SubMenus[WeaponName] then
+                SubMenus[WeaponName] = _menuPool:AddSubMenu(submenu_cat, WeaponData.label)
             end
     
-            local Spawn = NativeUI.CreateItem("~r~Equip/Remove " .. v.label, "Add or remove this weapon to/from your inventory.")
-            SubMenus[k]:AddItem(Spawn)
-            table.insert(Items, {Spawn, k})
-    
-            for attachments_key,attachments_value in pairs(v.attachments) do
+            local Spawn = NativeUI.CreateItem("~r~Equip/Remove " .. WeaponData.label, "Add or remove this weapon to/from your inventory.")
+            Spawn:SetLeftBadge(BadgeStyle.Gun)
+            SubMenus[WeaponName]:AddItem(Spawn)
+            table.insert(Items, {Spawn, WeaponName})
+
+            local Refill = NativeUI.CreateItem("Refill ammo", "Get max ammo for this weapon.")
+            Refill:SetLeftBadge(BadgeStyle.Ammo)
+            SubMenus[WeaponName]:AddItem(Refill)
+            table.insert(Items, {Refill, WeaponName, "refill"})
+
+            for attachments_key,attachments_value in pairs(WeaponData.attachments) do
                 if attachments_value then
-                    SubMenus[attachments_key] = _menuPool:AddSubMenu(SubMenus[k], attachments_key)
+                    SubMenus[attachments_key] = _menuPool:AddSubMenu(SubMenus[WeaponName], attachments_key)
         
                     for _, attach_item  in ipairs(attachments_value) do
                         attach = NativeUI.CreateItem(attach_item.label, "Add or remove attachment to/from your weapon.")
                         SubMenus[attachments_key]:AddItem(attach)
-                        table.insert(Items, {attach, k, attach_item.value})
+                        table.insert(Items, {attach, WeaponName, attach_item.value})
                     end
                 end
             end
@@ -50,6 +65,9 @@ function CreateWeaponMenu(menu)
                     if Value[3] ~= nil then
                         if Value[3] == false then
                             ShowNotification("Buy this weapon at: https://fluffy.tebex.io/")
+                        elseif Value[3] == "refill" then
+                            local _, ammo = GetMaxAmmo(GetPlayerPed(-1), GetHashKey(Value[2]))
+                            AddAmmoToPed(GetPlayerPed(-1), GetHashKey(Value[2]), ammo)
                         elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetHashKey(Value[2]), GetHashKey(Value[3])) then
                             RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetHashKey(Value[2]), GetHashKey(Value[3]))
                         else
@@ -87,7 +105,7 @@ RegisterCommand('+weapons', function()
     mainMenu:Visible(not mainMenu:Visible())
 end, false)
 
-RegisterKeyMapping('+weapons', "Fluffy's Weapons Menu", 'keyboard', 'F7')
+RegisterKeyMapping('+weapons', "WeaponMenu", 'keyboard', 'F7')
 
 Citizen.CreateThread(function()
     while true do

@@ -1,6 +1,7 @@
 {
     "WEAPON_GLOCK": {
         "label": "Glock 17",
+        "category": "Pistols",
         "attachments": {
             "Slides": [
                 {"label": "Slide 1", "value": "COMPONENT_SLIDE_01"},
@@ -38,6 +39,7 @@
     },
     "WEAPON_GLOCK19X": {
         "label": "Glock 19x Tan",
+        "category": "Pistols",
         "attachments": {
             "Suppressors": [
                 {"label": "Suppressor", "value": "COMPONENT_SUPP"}
@@ -53,6 +55,7 @@
     },
     "WEAPON_GLOCK19X2": {
         "label": "Glock 19x Black",
+        "category": "Pistols",
         "attachments": {
             "Suppressors": [
                 {"label": "Suppressor", "value": "COMPONENT_SUPP"}
@@ -68,6 +71,7 @@
     },
     "WEAPON_SR25": {
         "label": "SR-25",
+        "category": "Snipers",
         "attachments": {
             "Scopes": [
                 {"label": "Scope 1", "value": "COMPONENT_SR25_SCOPE_01"},
@@ -104,6 +108,7 @@
     },
     "WEAPON_MDR": {
         "label": "DT MDR 5.56x45",
+        "category": "Assault",
         "attachments": {
             "Scopes": [
                 {"label": "Scope 1", "value": "COMPONENT_MDR_SCOPE_01"},
@@ -133,6 +138,7 @@
     },
     "WEAPON_MDR2": {
         "label": "DT MDR 7.62x51",
+        "category": "Assault",
         "attachments": {
             "Scopes": [
                 {"label": "Scope 1", "value": "COMPONENT_MDR2_SCOPE_01"},
@@ -168,6 +174,7 @@
     },
     "WEAPON_AKM": {
         "label": "AKM",
+        "category": "Assault",
         "attachments": {
             "Stocks": [
                 {"label": "Stock 1", "value": "COMPONENT_AKM_STOCK_01"},
@@ -238,6 +245,7 @@
     },
     "WEAPON_SIG": {
         "label": "Sig Sauer M18",
+        "category": "Pistols",
         "attachments": {
             "Scopes": [
                 {"label": "Scope 1", "value": "COMPONENT_SIG_SCOPE_01"},
@@ -258,6 +266,74 @@
                 {"label": "Flashlight 2", "value": "COMPONENT_SIG_FLSH_02"},
                 {"label": "Flashlight 3", "value": "COMPONENT_SIG_FLSH_03"}
             ]
+        }
+    },
+    "WEAPON_M4A1FM": {
+        "label": "Military Themed M4A1",
+        "category": "Assault",
+        "attachments": {
+            "M4A1 Barrels & Suppressors": [
+                {"label": "Short Barrel", "value": "COMPONENT_M4A1FM_BARREL_01"},
+                {"label": "Long Barrel", "value": "COMPONENT_M4A1FM_BARREL_02"},
+                {"label": "Suppressed Short Barrel", "value": "COMPONENT_M4A1FM_BARREL_03"},
+                {"label": "Suppressed Long Barrel", "value": "COMPONENT_M4A1FM_BARREL_04"}		
+
+            ],
+            "M4A1 Magazines": [
+                {"label": "Stanag 30rnd", "value": "COMPONENT_M4A1FM_CLIP_01"},
+                {"label": "P-Mag 30rnd", "value": "COMPONENT_M4A1FM_CLIP_02"},
+                {"label": "Stanag 60rnd", "value": "COMPONENT_M4A1FM_CLIP_03"},				
+                {"label": "P-Mag 60rnd", "value": "COMPONENT_M4A1FM_CLIP_04"}
+            ],
+            "M4A1 Scopes": [
+                {"label": "Carry Handle", "value": "COMPONENT_M4A1FM_SCOPE_01"},
+                {"label": "Carry Handle + Acog", "value": "COMPONENT_M4A1FM_SCOPE_02"},
+                {"label": "XPS3 Holographic", "value": "COMPONENT_M4A1FM_SCOPE_03"},				
+                {"label": "553 Holographic", "value": "COMPONENT_M4A1FM_SCOPE_04"}
+            ],			
+            "M4A1 Flashlight & Lasers": [
+                {"label": "Insight LA5 BLK", "value": "COMPONENT_M4A1FM_FLSH_01"},
+                {"label": "Insight LA5 Tan", "value": "COMPONENT_M4A1FM_FLSH_02"},
+                {"label": "Morovision Anpeq15 BLK", "value": "COMPONENT_M4A1FM_FLSH_03"},				
+                {"label": "Morovision Anpeq15 Tan", "value": "COMPONENT_M4A1FM_FLSH_04"},
+                {"label": "Zenit Perst 3", "value": "COMPONENT_M4A1FM_FLSH_05"},
+                {"label": "Surefire X400 Flashlight", "value": "COMPONENT_M4A1FM_FLSH_06"}						
+            ]		
+        }
+    },		
+    "WEAPON_P90FM": {
+        "label": "FN P90",
+        "category": "Assault",
+        "attachments": {
+            "P90 Barrels & Suppressors": [
+                {"label": "P90 Short Barrel", "value": "COMPONENT_P90_BARREL_01"},
+                {"label": "Suppressed Short Barrel", "value": "COMPONENT_P90_BARREL_02"},	
+                {"label": "Long Barrel", "value": "COMPONENT_P90_BARREL_03"}				
+
+            ],
+            "P90 Butt Pads": [
+                {"label": "Standard ButtPad", "value": "COMPONENT_P90_BUTTPAD_01"},
+                {"label": "Extended ButtPad", "value": "COMPONENT_P90_BUTTPAD_02"}
+            ],
+            "P90 Scopes": [
+                {"label": "FN Ring Sight", "value": "COMPONENT_P90_SCOPE_01"},
+                {"label": "Picatinny Iron Sights", "value": "COMPONENT_P90_SCOPE_02"},
+                {"label": "Fold up Iron Sights", "value": "COMPONENT_P90_SCOPE_03"},				
+                {"label": "P90 Micro T1", "value": "COMPONENT_P90_SCOPE_04"},
+                {"label": "P90 Walther MRS", "value": "COMPONENT_P90_SCOPE_05"},
+                {"label": "P90 XPS3 Holographic", "value": "COMPONENT_P90_SCOPE_06"},
+                {"label": "P90 553 Holographic", "value": "COMPONENT_P90_SCOPE_07"},				
+                {"label": "P90 Canted Trijicon RMR", "value": "COMPONENT_P90_SCOPE_08"}				
+            ],			
+            "P90 Flashlight & Lasers": [
+                {"label": "Surefire X400 Flashlight", "value": "COMPONENT_P90_FLSH_01"},	
+                {"label": "Surefire 2IRS Flashlight", "value": "COMPONENT_P90_FLSH_02"},					
+                {"label": "Insight LA5 BLK", "value": "COMPONENT_P90_FLSH_03"},
+                {"label": "Insight LA5 Tan", "value": "COMPONENT_P90_FLSH_04"},
+                {"label": "Morovision Anpeq15 BLK", "value": "COMPONENT_P90_FLSH_05"},				
+                {"label": "Morovision Anpeq15 Tan", "value": "COMPONENT_P90_FLSH_06"},
+                {"label": "Zenit Perst 3", "value": "COMPONENT_P90_FLSH_07"}					
+            ]				
         }
     }
 }

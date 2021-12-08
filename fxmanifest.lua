@@ -2,8 +2,8 @@
 fx_version 'bodacious'
 game  'gta5'
 
-author 'DoJoMan18'
-description 'Team Reaver | Addon Weapons Menu'
+author 'DoJoMan18 | Team Reaver'
+description 'For all your add-on weapons!'
 version '0.1.1'
 
 dependency "NativeUI"
